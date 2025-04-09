@@ -1,1 +1,14 @@
 @import 'tailwindcss';
+
+@import './font-registry.css';
+
+@theme {
+  --color-base: #F7F7F7;
+  --color-black: #303235;
+  --color-gray: #98989A;
+  --color-gray-light: #E8E8E8;
+  --color-blue: #1F6DEA;
+
+  --font-satoshi: 'Satoshi', sans-serif;
+  --font-overlock: 'Overlock', serif;
+}
