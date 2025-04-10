@@ -1,6 +1,6 @@
 @import 'tailwindcss';
 
-@import './font-registry.css';
+@import '$lib/css/font-registry.css';
 
 @theme {
   --color-base: #F7F7F7;

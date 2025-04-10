@@ -1,0 +1,26 @@
+---
+title: 10th Anniversary of Datadot
+link: https://10.datadotestudio.com/
+roles:
+  - designer
+  - dev
+client:
+  name: datadot
+  url: https://datadotestudio.com/en
+tags: 
+  - Data Sonification
+  - Interactive Visualization
+details:
+  - name: Main Skills
+    value: 
+      - GSAP
+      - D3.js
+      - Svelte
+      - WebGL
+      - Tone.js
+widths:
+  - 480w
+  - 640w
+date: 2024-10-25T00:00:00.000Z
+excerpt: 
+---

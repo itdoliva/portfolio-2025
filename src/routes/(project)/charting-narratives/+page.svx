@@ -1,0 +1,26 @@
+---
+title: Charting Narratives
+link: https://a4c-charting-narratives.vercel.app/
+roles:
+  - designer
+  - dev
+tags: 
+  - Scrollytelling
+details:
+  - name: Client
+    value: Arch4Change
+  - name: Role
+    value: Design and Development
+  - name: Main Skills
+    value: 
+      - Ideation
+      - Figma
+      - Svelte
+      - D3.js
+      - GSAP
+date: 2023-09-01T00:00:00.000Z
+excerpt: A dashboard developed for a top industry company in Brazil.
+cover: Charting Narratives - Hero.gif
+---
+
+Charting Narratives is a data scrollytelling piece made for Arch4Change. Through scrolling, it guides the user through the findings of the survey which provided inputs to the conception of the curriculum.
