@@ -1,12 +1,12 @@
 ---
-title: 10th Anniversary of Datadot
-link: https://10.datadotestudio.com/
+title: Visualizing a Decade of Design
+url: https://www.10.datadot.com.br/
 roles:
   - designer
   - dev
 client:
-  name: datadot
-  url: https://datadotestudio.com/en
+  name: Datadot
+  url: https://datadot.com.br
 tags: 
   - Data Sonification
   - Interactive Visualization
@@ -18,9 +18,9 @@ details:
       - Svelte
       - WebGL
       - Tone.js
-widths:
-  - 480w
-  - 640w
 date: 2024-10-25T00:00:00.000Z
 excerpt: 
 ---
+
+
+Is it because there is nothing here?

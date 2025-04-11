@@ -3,7 +3,7 @@
 @import '$lib/css/font-registry.css';
 
 @theme {
-  --color-base: #F7F7F7;
+  --color-white: #F7F7F7;
   --color-black: #303235;
   --color-gray: #98989A;
   --color-gray-light: #E8E8E8;
@@ -11,4 +11,31 @@
 
   --font-satoshi: 'Satoshi', sans-serif;
   --font-overlock: 'Overlock', serif;
+}
+
+html {
+  @apply bg-white font-satoshi;
+}
+
+body {
+  @apply text-black m-0 p-0;
+}
+
+/* TYPOGRAPHY */
+
+@utility heading-2 {
+  @apply text-base md:text-2xl;
+}
+
+@utility heading-3 {
+  @apply text-base md:text-lg;
+}
+
+@utility nav-label {
+  @apply text-xs md:text-xs;
+}
+
+/* SPACING */
+@utility hpad {
+  @apply px-4 md:px-9;
 }
