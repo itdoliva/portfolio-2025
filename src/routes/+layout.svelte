@@ -12,7 +12,7 @@
 </script>
 
 <svelte:head>
-	<title>Italo_doliva</title>
+	<title>Italo&#8201;Doliva</title>
 </svelte:head>
 
 <div class="grid grid-cols-5 h-dvh overflow-hidden">

@@ -8,6 +8,7 @@
   --color-black: #303235;
   --color-gray: #98989A;
   --color-gray-light: #E8E8E8;
+  --color-gray-lightest: #F2F2F2;
   --color-blue: #1F6DEA;
 
   --font-satoshi: 'Satoshi', sans-serif;
@@ -36,6 +37,32 @@ h3 {
   @apply text-base md:text-lg leading-tight font-light;
 }
 
+/* SCROLLBAR */
+/* Works on Firefox */
+* {
+  /* scrollbar-width: thin; */
+  /* scrollbar-color: var(--color-gray) var(--color-blue); */
+}
+
+/* Works on Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+  @apply w-3;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-lightest border-l border-l-gray-light border-r-0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-clip: padding-box;
+  @apply bg-[#dddddd] border-2 border-black/0 border-l-3 border-l-black/0 rounded-md;
+}
+
+
+::-webkit-scrollbar-button {
+  @apply w-1 h-1;
+}
+
 /* TYPOGRAPHY */
 
 @utility nav-label {
@@ -44,7 +71,7 @@ h3 {
 
 /* SPACING */
 @utility hpad {
-  @apply px-4 md:px-9;
+  @apply px-4 md:px-9 xl:px-10;
 }
 
 @utility vpad {
@@ -52,7 +79,7 @@ h3 {
 }
 
 @utility pad {
-  @apply p-4 md:p-6;
+  @apply hpad vpad;
 }
 
 /*  */
