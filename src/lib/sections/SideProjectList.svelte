@@ -2,7 +2,7 @@
   import { projects } from "$lib/stores/global";
 </script>
 
-<section classs="relative">
+<section class="relative">
   <ul class="absolute top-0 left-0 w-full h-full flex flex-col">
 
     {#each $projects as project}

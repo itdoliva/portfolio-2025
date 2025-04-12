@@ -1,6 +1,7 @@
 @import 'tailwindcss';
 
 @import '$lib/css/font-registry.css';
+@import '$lib/css/animation.css';
 
 @theme {
   --color-white: #F7F7F7;
@@ -11,6 +12,8 @@
 
   --font-satoshi: 'Satoshi', sans-serif;
   --font-overlock: 'Overlock', serif;
+
+  --leading-tight: 1.15;
 }
 
 html {
@@ -21,15 +24,19 @@ body {
   @apply text-black m-0 p-0;
 }
 
+p {
+  @apply font-overlock leading-[1.3] my-1 md:my-2 text-base;
+}
+
+h2 {
+  @apply text-lg md:text-2xl leading-tight font-light;
+}
+
+h3 {
+  @apply text-base md:text-lg leading-tight font-light;
+}
+
 /* TYPOGRAPHY */
-
-@utility heading-2 {
-  @apply text-base md:text-2xl;
-}
-
-@utility heading-3 {
-  @apply text-base md:text-lg;
-}
 
 @utility nav-label {
   @apply text-xs md:text-xs;
@@ -38,4 +45,25 @@ body {
 /* SPACING */
 @utility hpad {
   @apply px-4 md:px-9;
+}
+
+@utility vpad {
+  @apply py-4 md:py-6;
+}
+
+@utility pad {
+  @apply p-4 md:p-6;
+}
+
+/*  */
+@utility wide-container {
+  @apply max-w-7xl mx-auto;
+}
+
+@utility container {
+  @apply max-w-4xl mx-auto;
+}
+
+@utility text-container {
+  @apply max-w-96;
 }

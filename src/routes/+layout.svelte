@@ -7,9 +7,13 @@
 	
 	let { children, data } = $props();
 
-	let HomeContent = $derived(data.route === '/' && $currentProject.Content)
+	let HomeProjectContent = $derived(data.route === '/' && $currentProject.Content)
 
 </script>
+
+<svelte:head>
+	<title>Italo_doliva</title>
+</svelte:head>
 
 <div class="grid grid-cols-5 h-dvh overflow-hidden">
 
@@ -28,7 +32,7 @@
 				{#if data.route === '/'}
 
 					<ProjectView>
-						<HomeContent />
+						<HomeProjectContent />
 					</ProjectView>
 
 				{:else if data.route.startsWith('/(project)')}
@@ -40,7 +44,7 @@
 				{:else}
 
 					{@render children()}
-					
+
 				{/if}
 
 			</main>

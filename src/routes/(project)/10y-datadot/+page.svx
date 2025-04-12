@@ -22,5 +22,30 @@ date: 2024-10-25T00:00:00.000Z
 excerpt: 
 ---
 
+<script>
+  import Container from '$lib/components/Container.svelte';
+  import Text from '$lib/components/Text.svelte';
+  import Image from '$lib/components/Image.svelte';
+</script>
 
-Is it because there is nothing here?
+<Container>
+  <Image 
+    src480="/project-media/10y-datadot/cover-900w.webp"
+    src768="/project-media/10y-datadot/cover-1200w.webp"
+    src1280="/project-media/10y-datadot/cover-1440w.webp"
+    alt="Preview of {title}"  
+  />
+</Container>
+
+
+<Container>
+  <Text>
+
+  ### Overview
+
+  The Datadot 10-year celebration project features all the deliveries made by Datadot and their characteristics throughout its first decade of history. 
+
+  As if it were a graphic archive of all the deliveries made, it is possible to filter them in different ways, reorder them, understand their connections and their particularities, and explore them through sound.
+
+  </Text>
+</Container>

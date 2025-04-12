@@ -5,7 +5,7 @@
 </script>
 
 <header class="border-b border-b-gray-light flex justify-between">
-  <figure class="ml-4 md:ml-9 my-2 md:my-3 h-3 md:h-5">
+  <figure class="ml-4 md:ml-9 my-3 md:my-3 h-3 md:h-5">
     <a href='/' aria-label="Go to Homepage" title='Homepage'>
       <Logo />
     </a>
