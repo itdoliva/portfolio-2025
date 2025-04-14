@@ -26,26 +26,86 @@ excerpt:
   import Container from '$lib/components/Container.svelte';
   import Text from '$lib/components/Text.svelte';
   import Image from '$lib/components/Image.svelte';
+  import Columns from '$lib/components/Columns.svelte';
+  import Grid4x4 from '$lib/components/Grid4x4.svelte';
 </script>
 
 <Container>
   <Image 
-    src480="/project-media/10y-datadot/cover-900w.webp"
-    src768="/project-media/10y-datadot/cover-1200w.webp"
-    src1280="/project-media/10y-datadot/cover-1440w.webp"
+    srcset={[
+      { href: "/project-media/10y-datadot/cover-960w.webp", width: 960 },
+      { href: "/project-media/10y-datadot/cover-1536w.webp", width: 1536 },
+      { href: "/project-media/10y-datadot/cover-2560w.webp", width: 2560 }
+    ]}
     alt="Preview of {title}"  
   />
 </Container>
 
-
-<Container>
+<Columns>
   <Text>
 
-  ### Overview
+    ### Overview
 
-  The Datadot 10-year celebration project features all the deliveries made by Datadot and their characteristics throughout its first decade of history. 
+    The Datadot 10-year celebration project features all the deliveries made by Datadot and their characteristics throughout its first decade of history. 
 
-  As if it were a graphic archive of all the deliveries made, it is possible to filter them in different ways, reorder them, understand their connections and their particularities, and explore them through sound.
+    As if it were a graphic archive of all the deliveries made, it is possible to filter them in different ways, reorder them, understand their connections and their particularities, and explore them through sound.
 
   </Text>
+    <Text>
+
+    The Datadot 10-year celebration project features all the deliveries made by Datadot and their characteristics throughout its first decade of history. 
+
+    As if it were a graphic archive of all the deliveries made, it is possible to filter them in different ways, reorder them, understand their connections and their particularities, and explore them through sound.
+
+  </Text>
+  <Text>
+
+    ### Overview
+
+    The Datadot 10-year celebration project features all the deliveries made by Datadot and their characteristics throughout its first decade of history. 
+
+    As if it were a graphic archive of all the deliveries made, it is possible to filter them in different ways, reorder them, understand their connections and their particularities, and explore them through sound.
+
+  </Text>
+</Columns>
+
+
+<Container>
+    <Image 
+      srcset={[
+        { href: "/project-media/10y-datadot/cover-960w.webp", width: 960 },
+        { href: "/project-media/10y-datadot/cover-1536w.webp", width: 1536 },
+        { href: "/project-media/10y-datadot/media-1-2560w.webp", width: 2560 }
+      ]}
+      alt="Preview of {title}"  
+    />
+</Container>
+
+<Container>
+  <Image 
+    srcset={[
+      { href: "/project-media/10y-datadot/cover-960w.webp", width: 960 },
+      { href: "/project-media/10y-datadot/cover-1536w.webp", width: 1536 },
+      { href: "/project-media/10y-datadot/media-2-2560w.webp", width: 2560 }
+    ]}
+    alt="Preview of {title}"  
+  />
+</Container>
+
+<Grid4x4>
+  <Image pad={true} srcset={[{ href: "/project-media/10y-datadot/joker.webp", width: 1000 }]} />
+  <Image pad={true} srcset={[{ href: "/project-media/10y-datadot/joker.webp", width: 1000 }]} />
+  <Image pad={true} srcset={[{ href: "/project-media/10y-datadot/joker.webp", width: 1000 }]} />
+  <Image pad={true} srcset={[{ href: "/project-media/10y-datadot/joker.webp", width: 1000 }]} />
+</Grid4x4>
+
+<Container>
+  <Image 
+    srcset={[
+      { href: "/project-media/10y-datadot/media-3-960w.webp", width: 960 },
+      { href: "/project-media/10y-datadot/media-3-1536w.webp", width: 1536 },
+      { href: "/project-media/10y-datadot/media-3-2560w.webp", width: 2560 }
+    ]}
+    alt="Preview of {title}"  
+  />
 </Container>
