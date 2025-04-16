@@ -8,8 +8,6 @@
 </script>
 
 {#if $currentProject}
-  <article>
-    <ProjectHeader />
-    {@render children?.()}
-  </article>
+  <ProjectHeader />
+  {@render children?.()}
 {/if}

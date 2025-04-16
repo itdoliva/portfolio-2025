@@ -1,9 +1,12 @@
 <script>
-  let { children, isWide=true } = $props()
+  import Box from "$lib/layouts/Box.svelte";
+	import Center from "$lib/layouts/Center.svelte";
+  
+  let { children } = $props()
 </script>
 
-<div class="pad border-b border-b-gray-light">
-  <div class="{isWide ? 'wide-container' : 'container'}">
+<Box>
+  <Center>
     {@render children?.()}
-  </div>
-</div>
+  </Center>
+</Box>

@@ -1,5 +1,8 @@
 <script>
-  let { srcset=[], alt, mimeType="image/webp", rounded=true, pad=false } = $props()
+	import Box from "$lib/layouts/Box.svelte";
+	import Frame from "$lib/layouts/Frame.svelte";
+
+  let { srcset=[], alt, mimeType="image/webp", noBorder=false } = $props()
   
   let width = $state(0)
 
@@ -20,12 +23,8 @@
 
 </script>
 
-<div bind:clientWidth={width} class="{pad ? 'pad' : ''}">
-
+<Frame bind:width {noBorder}>
   {#if src}
-    <figure class="{rounded ? 'rounded-lg overflow-hidden border border-gray' : ''}">
-      <img loading="lazy" src={src.href} {alt} type={mimeType} />
-    </figure>
+    <img loading="lazy" src={src.href} {alt} type={mimeType} />
   {/if}
-
-</div>
+</Frame>

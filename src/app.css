@@ -15,53 +15,53 @@
   --font-overlock: 'Overlock', serif;
 
   --leading-tight: 1.15;
+  --leading-snug: 1.3;
+
+  --spacing-text-measure: 45ch;
 }
 
-html {
-  @apply bg-white font-satoshi;
+* {
+  @apply box-border;
 }
 
 body {
-  @apply text-black m-0 p-0;
+  @apply bg-white font-satoshi text-black text-base leading-snug m-0 p-0;
+}
+
+img {
+  max-inline-size: 100%;
+}
+
+h1, h2, h3, h4, h5, p {
+  @apply my-2;
 }
 
 p {
-  @apply font-overlock leading-[1.3] my-1 md:my-2 text-base;
+  @apply font-overlock max-w-text-measure;
+}
+
+h1, h2, h3, h4, h5 {
+  @apply font-satoshi font-light text-black leading-tight mx-0;
+}
+
+h1 {
+  @apply text-lg md:text-2xl;
 }
 
 h2 {
-  @apply text-lg md:text-2xl leading-tight font-light;
+  @apply text-base md:text-lg;
 }
 
-h3 {
-  @apply text-base md:text-lg leading-tight font-light;
+/* LAYOUT */
+
+/* main > :not(.project-header) > * {
+  @apply center-l;
+} */
+
+@utility center-l {
+  @apply max-w-6xl mx-auto;
 }
 
-/* SCROLLBAR */
-/* Works on Firefox */
-* {
-  /* scrollbar-width: thin; */
-  /* scrollbar-color: var(--color-gray) var(--color-blue); */
-}
-
-/* Works on Chrome, Edge, and Safari */
-::-webkit-scrollbar {
-  @apply w-3;
-}
-
-::-webkit-scrollbar-track {
-  @apply bg-gray-lightest border-l border-l-gray-light border-r-0;
-}
-
-::-webkit-scrollbar-thumb {
-  background-clip: padding-box;
-  @apply bg-[#dddddd] border-2 border-black/0 border-l-3 border-l-black/0 rounded-md;
-}
-
-
-::-webkit-scrollbar-button {
-  @apply w-1 h-1;
-}
 
 /* TYPOGRAPHY */
 
@@ -82,15 +82,37 @@ h3 {
   @apply hpad vpad;
 }
 
-/*  */
-@utility wide-container {
-  @apply max-w-7xl mx-auto;
+/* PADDING */
+@utility pad-sm {
+  @apply p-1 md:p-3;
 }
 
-@utility container {
-  @apply max-w-4xl mx-auto;
+@utility pad-md {
+  @apply p-4 md:p-6;
 }
 
-@utility text-container {
-  @apply max-w-96;
+
+/* SCROLLBAR */
+/* Works on Firefox */
+/* * {
+  scrollbar-width: thin;
+  scrollbar-color: #dddddd var(--color-gray-lightest);
+} */
+
+/* Works on Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+  @apply w-3;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-lightest border-l border-l-gray-light border-r-0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-clip: padding-box;
+  @apply bg-[#dddddd] border-2 border-black/0 border-l-3 border-l-black/0 rounded-md;
+}
+
+::-webkit-scrollbar-button {
+  @apply w-1 h-1;
 }

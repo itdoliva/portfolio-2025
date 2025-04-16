@@ -4,6 +4,8 @@
 	import Header from '$lib/sections/Header.svelte';
 	import { projects, currentProject } from '$lib/stores/global';
 	import ProjectView from '$lib/sections/ProjectView.svelte';
+	import Sidebar from '$lib/layouts/Sidebar.svelte';
+	import Stack from '$lib/layouts/Stack.svelte';
 	
 	let { children, data } = $props();
 
@@ -15,42 +17,34 @@
 	<title>Italo&#8201;Doliva</title>
 </svelte:head>
 
-<div class="grid grid-cols-5 h-dvh overflow-hidden">
+<Sidebar sideWidth="20%">
 
-	<aside class="col-start-1 col-span-1 relative border-r border-r-gray-light overflow-auto">
-		<SideProjectList />
-	</aside>
+	<SideProjectList />
 
-	<section class="col-span-4 relative">
+	<div class="relative pb-12">
 
-		<div class="absolute top-0 left-0 w-full h-full overflow-auto">
+		<Header />
 
-			<Header />
-
-			<main>
-
-				{#if data.route === '/'}
-
-					<ProjectView>
-						<HomeProjectContent />
-					</ProjectView>
-
-				{:else if data.route.startsWith('/(project)')}
-
-					<ProjectView>
-						{@render children()}
-					</ProjectView>
-
-				{:else}
-
+		<Stack element="main" borderWidth="1">
+			{#if data.route === '/'}
+	
+				<ProjectView>
+					<HomeProjectContent />
+				</ProjectView>
+	
+			{:else if data.route.startsWith('/(project)')}
+	
+				<ProjectView>
 					{@render children()}
+				</ProjectView>
+	
+			{:else}
+	
+				{@render children()}
+	
+			{/if}
+		</Stack>
+	
+	</div>
 
-				{/if}
-
-			</main>
-
-		</div>
-
-	</section>
-
-</div>
+</Sidebar>

@@ -1,12 +1,16 @@
 <script>
+	import Box from "$lib/layouts/Box.svelte";
+	import Center from "$lib/layouts/Center.svelte";
+
   let { children } = $props()
 
   let outerWidth = $state(0)
   let innerWidth = $state(0)
 </script>
 
-<div class="border-b border-b-gray-light" bind:clientWidth={outerWidth}>
-  <div class="wide-container {outerWidth > innerWidth + 2 ? 'border-l border-r border-l-gray-light border-r-gray-light' : ''}" bind:clientWidth={innerWidth}>
+
+<div bind:clientWidth={outerWidth}>
+  <div class="center-l {outerWidth > innerWidth + 2 ? 'border-l border-r border-l-gray-light border-r-gray-light' : ''}" bind:clientWidth={innerWidth}>
 
     <div class="grid grid-rows-[minmax(0,1fr)_min-content_minmax(0,1fr)_min-content_minmax(0,1fr)_min-content_minmax(0,1fr)] md:grid-cols-[minmax(0,1fr)_min-content_minmax(0,1fr)] md:grid-rows-[minmax(0,1fr)_min-content_minmax(0,1fr)] ">
 

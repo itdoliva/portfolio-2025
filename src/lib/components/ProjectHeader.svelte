@@ -50,7 +50,7 @@
 
 <section
   bind:this={wrapper}
-  class="sticky top-0 border-b border-b-gray-light group hpad bg-white"
+  class="project-header sticky top-0 group bg-white"
   role="button"
   tabindex="-1"
   onmousemove={onMouseMove}
@@ -80,10 +80,10 @@
 
   {/if}
 
-  <div bind:this={container} class="wide-container vpad relative z-20 pointer-events-none flex justify-between">
+  <div bind:this={container} class="center-l pad relative z-20 pointer-events-none flex justify-between">
     <div class="flex flex-col gap-1.5 md:gap-0.5 {hasURL ? 'mr-12' : ''}">
 
-      <h2 class="flex items-center gap-px md:gap-1 font-light {hovering ? 'text-white' : 'text-black'}">
+      <h1 class="flex items-center !my-0 gap-px md:gap-1 font-light {hovering ? 'text-white' : 'text-black'}">
 
         <figure class="w-6 md:w-9 {hovering ? 'fill-white heartbeat' : 'fill-black'}">
           <Star />
@@ -91,7 +91,7 @@
         
         {$currentProject.title}
 
-      </h2>
+      </h1>
 
       {#if $currentProject.client || $currentProject.date}
         <h3 class="italic font-normal {hovering ? 'text-gray-light' : 'text-gray'}">

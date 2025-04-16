@@ -1,19 +1,28 @@
 <script>
+	import Box from "$lib/layouts/Box.svelte";
+	import Frame from "$lib/layouts/Frame.svelte";
+	import Stack from "$lib/layouts/Stack.svelte";
   import { projects } from "$lib/stores/global";
+
+  let width = $state(0)
 </script>
 
-<section class="relative">
-  <ul class="absolute top-0 left-0 w-full h-full flex flex-col">
+<aside bind:clientWidth={width}>
+  <div class="fixed top-0 left-0 h-svh border-r border-r-gray-light overflow-auto" style:width={width + 'px'}>
 
-    {#each $projects as project}
-      <li class="p-1 md:p-3">
-        <a href="/{project.slug}">
-          <figure class="relative w-full h-0 pb-[100%] md:pb-[75%] rounded-lg overflow-hidden border border-gray">
-            <img src="/project-media/{project.slug}/thumbnail.webp" alt={project.name} class="absolute top-0 left-0 w-full h-full bg-gray-light object-center object-cover"/>
-          </figure>
-        </a>
-      </li>
-      <hr class="border-gray-light"/>
-    {/each}
-  </ul>
-</section>
+    <Stack element="ul" borderWidth="1">
+
+      {#each $projects as project}
+        <Box element="li" padding="small">
+          <a href="/{project.slug}">
+            <Frame aspectRatio="4/3">
+              <img src="/project-media/{project.slug}/thumbnail.webp" alt={project.name}/>
+            </Frame>
+          </a>
+        </Box>
+      {/each}
+
+    </Stack>
+
+  </div>
+</aside>
