@@ -21,7 +21,7 @@
 
 	<SideProjectList />
 
-	<div class="relative pb-12">
+	<div class="relative pb-12 min-h-svh">
 
 		<Header />
 

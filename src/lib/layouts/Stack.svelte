@@ -23,10 +23,6 @@
     border-block-end: var(--border-width) solid var(--color-gray-light);
   }
 
-  .stack > :global(*:last-child) {
-    border-block-end-width: 0;
-  }
-
   .stack > :global(* + *) {
     margin-block-start: var(--space);
   }

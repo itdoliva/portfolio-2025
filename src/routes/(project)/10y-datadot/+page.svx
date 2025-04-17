@@ -26,7 +26,7 @@ excerpt:
   import Container from '$lib/components/Container.svelte';
   import Image from '$lib/components/Image.svelte';
   import Columns from '$lib/components/Columns.svelte';
-  import Grid4x4 from '$lib/components/Grid4x4.svelte';
+  import Grid2x2 from '$lib/components/Grid2x2.svelte';
   import Stack from '$lib/layouts/Stack.svelte';
   import Box from '$lib/layouts/Box.svelte';
   import Switcher from '$lib/layouts/Switcher.svelte';
@@ -47,9 +47,6 @@ excerpt:
 <Container>
   <Stack>
 
-      ## Overview
-
-    <Switcher>
 
         In 2024, design studio Datadot celebrated its 10th anniversary and to commemorate this milestone we designed and developed this interactive experiment for users to explore this journey.
 
@@ -57,7 +54,6 @@ excerpt:
 
         As if it were a graphic archive of all the deliveries made, it is possible to filter them in different ways, reorder them, understand their connections and their particularities, and explore them through sound.    
 
-    </Switcher>
   </Stack>
 </Container>
 
@@ -83,7 +79,7 @@ excerpt:
   />
 </Container>
 
-<Grid4x4>
+<Grid2x2>
   <Box>
     <Image srcset={[{ href: "/project-media/10y-datadot/media-4_1-1120w.webp", width: 1120 }]} />
   </Box>
@@ -99,7 +95,7 @@ excerpt:
   <Box>
     <Image srcset={[{ href: "/project-media/10y-datadot/media-4_4-1120w.webp", width: 1120 }]} />
   </Box>
-</Grid4x4>
+</Grid2x2>
 
 <Container>
   <Image 
