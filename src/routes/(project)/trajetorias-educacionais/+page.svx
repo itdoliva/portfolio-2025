@@ -1,5 +1,5 @@
 ---
-title: Trajetórias Educacionais
+title: Educational Paths (Trajetórias Educacionais)
 url: https://www.fundacaoitau.org.br/observatorio/dados/dados-trajetorias-educacionais
 client:
   name: Fundação Itaú
@@ -44,8 +44,6 @@ excerpt:
     The dashboard allows the user to understand and explore the educational trajectories of students in Brazilian schools, providing insights into their educational journeys.
 
     My role in this project was to bring the design from Odd Studio's amazing team to life, developing the dashboard mainly using Svelte and D3.js. 
-
-
 
   </Stack>
 
