@@ -1,6 +1,6 @@
 ---
 title: Where Colors are Afraid to Reflect their Light
-link: https://itdoliva.github.io/where-colors-are-afraid-to-reflect-their-light/
+url: https://itdoliva.github.io/where-colors-are-afraid-to-reflect-their-light/
 roles:
   - designer
   - dev
@@ -21,8 +21,65 @@ date: 2023-06-28T00:00:00.000Z
 excerpt: 
 ---
 
-I have celebrated my pride by publishing this interactive data visualization that allows to compare the legal situation and living conditions of queer people in different regions across the world.
+<script>
+  import Container from '$lib/components/Container.svelte';
+  import Image from '$lib/components/Image.svelte';
+  import Columns from '$lib/components/Columns.svelte';
+  import Grid1x2 from '$lib/components/Grid1x2.svelte';
+  import Video from '$lib/components/Video.svelte';
+  import Stack from '$lib/layouts/Stack.svelte';
+  import Sidebar from '$lib/layouts/Sidebar.svelte';
+  import Box from '$lib/layouts/Box.svelte';
+  import Switcher from '$lib/layouts/Switcher.svelte';
+  import Center from '$lib/layouts/Center.svelte';
+  import Grid2x2 from '$lib/components/Grid2x2.svelte';
 
-Every year, Spartacus Gay Travel gauges the legal situation and living conditions for members of the LGBTQIAPN+ community in a region.
+</script>
 
-Where Colors are Afraid to Reflect their Light compares the Gay Travel Index - a score that quantifies the living conditions for the queer community members among countries.
+
+<Container>
+  <Video title="Where Colors are Afraid to Reflect their Light - Demo" videoId="He_nbssUceA" width="1885" height="866" aspectRatio="16/10" />
+</Container>
+
+<Container intrinsicCentering={true}>
+
+  <Stack>
+
+    When traveling to other countries, a gay tourist may be at risk for not knowing or being aware of the ways in which other regions dialogue with members of their community. For this reason, every year Spartacus Gay Travel calculates and publishes the Gay Travel Index (GTI), a score for the living conditions of the LGBTQIAPN+ community, for countries and regions around the world.
+
+    Where Colors are Afraid to Reflect their Light alows the comparison of the Gay Travel Index among regions and countries.
+
+  </Stack>
+
+  
+</Container>
+
+<Container>
+  <Image 
+    srcset={[
+      { href: "/project-media/where-colors-are-afraid-to-reflect-their-light/cover-960w.webp", width: 960 },
+      { href: "/project-media/where-colors-are-afraid-to-reflect-their-light/cover-1536w.webp", width: 1536 },
+      { href: "/project-media/where-colors-are-afraid-to-reflect-their-light/cover-2560w.webp", width: 2560 }
+    ]}
+    alt="Preview of {title}"  
+  />
+</Container>
+
+
+<Grid2x2>
+  <Box>
+    <Image srcset={[{ href: "/project-media/where-colors-are-afraid-to-reflect-their-light/media-1_1-1120w.webp", width: 1120 }]} />
+  </Box>
+
+  <Box>
+    <Image srcset={[{ href: "/project-media/where-colors-are-afraid-to-reflect-their-light/media-1_2-1120w.webp", width: 1120 }]} />
+  </Box>
+
+  <Box>
+    <Image srcset={[{ href: "/project-media/where-colors-are-afraid-to-reflect-their-light/media-1_3-1120w.webp", width: 1120 }]} />
+  </Box>
+
+  <Box>
+    <Image srcset={[{ href: "/project-media/where-colors-are-afraid-to-reflect-their-light/media-1_4-1120w.webp", width: 1120 }]} />
+  </Box>
+</Grid2x2>

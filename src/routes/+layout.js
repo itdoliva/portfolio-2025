@@ -10,6 +10,7 @@ export async function load({ route }) {
 
   if (!get(projectsLoaded)) {
     allProjects = getAllProjects()
+    allProjects.sort((a, b) => b.date - a.date)
     projects.set(allProjects)
     projectsLoaded.set(true)
   }

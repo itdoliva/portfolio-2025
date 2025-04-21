@@ -22,6 +22,7 @@ widths:
   - 640w
 date: 2023-03-27T00:00:00.000Z
 excerpt: 
+hide: true
 ---
 
 Skills Universe is the visual representation of my current set of tools for data design work.

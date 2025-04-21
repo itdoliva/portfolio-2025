@@ -19,17 +19,14 @@ details:
       - WebGL
       - Tone.js
 date: 2024-10-25T00:00:00.000Z
-excerpt: 
 ---
 
 <script>
   import Container from '$lib/components/Container.svelte';
   import Image from '$lib/components/Image.svelte';
-  import Columns from '$lib/components/Columns.svelte';
   import Grid2x2 from '$lib/components/Grid2x2.svelte';
   import Stack from '$lib/layouts/Stack.svelte';
   import Box from '$lib/layouts/Box.svelte';
-  import Switcher from '$lib/layouts/Switcher.svelte';
 </script>
 
 <Container>
@@ -44,15 +41,14 @@ excerpt:
 </Container>
 
 
-<Container>
+<Container intrinsicCentering={true}>
   <Stack>
 
+    In 2024, design studio Datadot celebrated its 10th anniversary and to commemorate this milestone we designed and developed this interactive experiment for users to explore this journey.
 
-        In 2024, design studio Datadot celebrated its 10th anniversary and to commemorate this milestone we designed and developed this interactive experiment for users to explore this journey.
+    The Datadot 10-year celebration project, Visualizing a Decade of Design, features all the deliveries made by Datadot and their characteristics throughout its first decade of history. 
 
-        The Datadot 10-year celebration project, Visualizing a Decade of Design, features all the deliveries made by Datadot and their characteristics throughout its first decade of history. 
-
-        As if it were a graphic archive of all the deliveries made, it is possible to filter them in different ways, reorder them, understand their connections and their particularities, and explore them through sound.    
+    As if it were a graphic archive of all the deliveries made, it is possible to filter them in different ways, reorder them, understand their connections and their particularities, and explore them through sound.    
 
   </Stack>
 </Container>

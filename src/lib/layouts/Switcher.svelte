@@ -3,11 +3,15 @@
     children, 
     element="div", 
     threshold="var(--spacing-text-measure)",
-    gap="calc(var(--spacing) * 8)"
+    gapK="8"
   } = $props()
 </script>
 
-<svelte:element this={element} class="switcher" style:--threshold={threshold} style:--gap={gap}>
+<svelte:element this={element} 
+  class="switcher" 
+  style:--threshold={threshold} 
+  style:--gap="calc(var(--spacing) * {gapK})"
+>
   {@render children?.()}
 </svelte:element>
 

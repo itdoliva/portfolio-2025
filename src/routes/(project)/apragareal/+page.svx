@@ -1,6 +1,6 @@
 ---
 title: APRAGAREAL
-link: https://itdoliva.github.io/apragareal/
+url: https://itdoliva.github.io/apragareal/
 roles:
   - designer
   - dev
@@ -16,13 +16,7 @@ details:
 tags: 
   - Website Visualization
   - Data Journalism
-gallery:
-    - pest-overview.png
-widths:
-  - 480w
-  - 640w
 date: 2022-12-06T00:00:00.000Z
-excerpt: Visual project which compares the maximum concentration of pesticides according to Brazil's and European Union's legislation.
 ---
 
 
@@ -48,8 +42,7 @@ excerpt: Visual project which compares the maximum concentration of pesticides a
   />
 </Container>
 
-<Container>
-  <Center>
+<Container intrinsicCentering={true}>
     <Stack>
 
         APRAGAREAL compares the maximum residue level of pesticides allowed by the European Union and Brazilian laws in foods mutually grown in both regions. The project accounts for the most used pesticides in Brazil in 2020.
@@ -57,7 +50,6 @@ excerpt: Visual project which compares the maximum concentration of pesticides a
         In the end, it reports how deputies - grouped by parties and political wings - have voted on the bill that would further expose Brazil to pesticides.
 
     </Stack>
-  </Center>
 </Container>
 
 <Container>

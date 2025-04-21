@@ -17,7 +17,7 @@
 	<title>Italo&#8201;Doliva</title>
 </svelte:head>
 
-<Sidebar sideWidth="20%">
+<Sidebar sideOn='left' sideWidth="20%" gapK=0>
 
 	<SideProjectList />
 

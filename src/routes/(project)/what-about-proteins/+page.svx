@@ -1,6 +1,5 @@
 ---
-title: What About Proteins?
-link: https://drive.google.com/file/d/1M5lUXu9iDHYor-umtjNJIr2Mp9prn2Ew/view?usp=sharing
+title: What about Proteins?
 roles:
   - designer
   - dev
@@ -13,19 +12,51 @@ details:
       - Adobe Illustrator
       - D3.js
       - Figma
-gallery:
-    - proteins-perspective.png
-    - proteins-overview.png
-widths:
-  - 480w
-  - 640w
 date: 2023-01-25T00:00:00.000Z
-excerpt: 
 ---
 
-"What about proteins?" primarily encodes the amount of macronutrients - proteins, carbohydrates, and lipids - of different foods.
+<script>
+  import Container from '$lib/components/Container.svelte';
+  import Image from '$lib/components/Image.svelte';
+  import Columns from '$lib/components/Columns.svelte';
+  import Grid2x2 from '$lib/components/Grid2x2.svelte';
+  import Stack from '$lib/layouts/Stack.svelte';
+  import Box from '$lib/layouts/Box.svelte';
+  import Cluster from '$lib/layouts/Cluster.svelte';
+  import Link from '$lib/components/Link.svelte';
+</script>
 
-The project's title is maybe one of the most asked questions to vegetarians. It arises from the simplistic view - and surrounded by problems - that meat and eggs are the main available protein sources.
+<Container>
+  <Image 
+    srcset={[
+      { href: "/project-media/what-about-proteins/cover-960w.webp", width: 960 },
+      { href: "/project-media/what-about-proteins/cover-1536w.webp", width: 1536 },
+      { href: "/project-media/what-about-proteins/cover-2560w.webp", width: 2560 }
+    ]}
+    alt="Preview of {title}"  
+  />
+</Container>
 
-# The Idea
-As a vegan person, I'm asked about where I get my proteins from in a regular basis. In order to answer this question and provide further information on food group nutrients, I decided to encode food data on a printable piece.
+<Container intrinsicCentering={true}>
+  <Cluster>
+
+    <Link href="/project-media/what-about-proteins/what-about-proteins.pdf">
+      English Version
+    </Link>
+
+    <Link href="/project-media/what-about-proteins/mas-e-as-proteinas.pdf">
+      Portuguese Version
+    </Link>
+
+  </Cluster>
+</Container>
+
+<Container intrinsicCentering={true}>
+  <Stack>
+
+      "What about Proteins?” is maybe one of the most asked questions to vegetarians. It arises from the simplistic view - and surrounded by problems - that meat and eggs are the main protein sources available.
+
+      The question is also the title of this printable piece that encodes the macronutrient amounts and the saturated fat percentage in certain foods, which are organized into food groups. Values refer to raw portions of 100g.
+
+  </Stack>
+</Container>

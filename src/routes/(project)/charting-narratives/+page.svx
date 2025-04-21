@@ -1,6 +1,9 @@
 ---
 title: Charting Narratives
-link: https://a4c-charting-narratives.vercel.app/
+url: https://a4c-charting-narratives.vercel.app/
+client:
+  name: Arch4Change
+  url: https://www.arch4change.com/
 roles:
   - designer
   - dev
@@ -19,8 +22,49 @@ details:
       - D3.js
       - GSAP
 date: 2023-09-01T00:00:00.000Z
-excerpt: A dashboard developed for a top industry company in Brazil.
-cover: Charting Narratives - Hero.gif
 ---
 
-Charting Narratives is a data scrollytelling piece made for Arch4Change. Through scrolling, it guides the user through the findings of the survey which provided inputs to the conception of the curriculum.
+
+
+<script>
+  import Container from '$lib/components/Container.svelte';
+  import Image from '$lib/components/Image.svelte';
+  import Columns from '$lib/components/Columns.svelte';
+  import Grid1x2 from '$lib/components/Grid1x2.svelte';
+  import Video from '$lib/components/Video.svelte';
+  import Stack from '$lib/layouts/Stack.svelte';
+  import Sidebar from '$lib/layouts/Sidebar.svelte';
+  import Box from '$lib/layouts/Box.svelte';
+  import Switcher from '$lib/layouts/Switcher.svelte';
+  import Center from '$lib/layouts/Center.svelte';
+</script>
+
+
+<Container>
+  <Image 
+    srcset={[
+      { href: "/project-media/charting-narratives/cover-960w.webp", width: 960 },
+      { href: "/project-media/charting-narratives/cover-1536w.webp", width: 1536 },
+      { href: "/project-media/charting-narratives/cover-2560w.webp", width: 2560 }
+    ]}
+    alt="Preview of {title}"  
+  />
+</Container>
+
+<Container intrinsicCentering={true}>
+  <Sidebar contentMinWidth='50%'>
+
+    <Container padding={false}>
+      <Video title="Charting Narratives - Demo" videoId="gi2MYe09sY8" maxWidth="calc(var(--spacing) * 72)" />
+    </Container>
+
+    <Stack>
+
+        Charting Narratives is a data scrollytelling application made for [{client.name}]({client.url}). It guides the user through the findings of a survey on climate justice for architecture education conducted among staff and students of architecture colleges.
+
+        The survey conducted by Arch4Change colleges directed and dictated how the curriculum should be created. Based on it, it's possible to convey the story of Arch4Change's origin and its reason to exist. I decided to tell this story with a scrollytelling piece that starts and ends with a timeline. Guiding the user through the key findings of the interviews. The end of the line guides the user to Arch4Change website to learn more about the curriculum.
+
+    </Stack>
+
+  </Sidebar>
+</Container>

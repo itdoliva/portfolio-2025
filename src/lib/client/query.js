@@ -1,7 +1,11 @@
 export const getAllProjects = () => {
   const files = import.meta.glob('/src/routes/\\(project\\)/**/+page.svx', { eager: true })
 
-  return Object.entries(files).map(([ path, content ], i) => {
+  const projects = []
+
+  Object.entries(files).forEach(([ path, content ], i) => {
+    if (content.metadata?.hide) return
+
     const slugMatch = path.match(/\/([^\/]+)\/[^\/]+\.svx$/)
     const slug = slugMatch ? slugMatch[1] : null
 
@@ -18,6 +22,8 @@ export const getAllProjects = () => {
       project.Content = content.default
     }
 
-    return project
+    projects.push(project)
   })
+
+  return projects
 }

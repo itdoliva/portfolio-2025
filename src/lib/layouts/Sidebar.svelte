@@ -1,37 +1,44 @@
 <script>
   let { 
     children,
-    sideWidth = '25%',
-    contentMin = 0,
-    space = 0,
-  } = $props()
+    sideOn = 'left',
+    sideWidth = 'auto',
+    sideMinWidth = '0',
+    sideMaxWidth = "380px",
+    contentMinWidth = 0,
+    gapK = 8,
+  } = $props();
 </script>
 
 <div 
-  class="with-sidebar"
+  class="with-sidebar {sideOn} flex flex-wrap"
   style:--side-width={sideWidth}
-  style:--content-min={contentMin}
-  style:--space={space}
+  style:--side-max-width={sideMaxWidth}
+  style:--side-min-width={sideMinWidth}
+  style:--content-min-width={contentMinWidth}
+  style:--gap="calc(var(--spacing) * {gapK})"
 >
   {@render children?.()}
 </div>
 
 <style>
   .with-sidebar {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space);
+    gap: var(--gap);
   }
 
-  .with-sidebar > :global(:first-child) {
+  .with-sidebar.left > :global(:first-child),
+  .with-sidebar.right > :global(:last-child) {
     inline-size: var(--side-width);
-    max-inline-size: 380px;
+    min-inline-size: var(--side-min-width);
+    max-inline-size: var(--side-max-width);
     flex-grow: 1;
   }
 
-  .with-sidebar > :global(:last-child) {
+  .with-sidebar.left > :global(:last-child),
+  .with-sidebar.right > :global(:first-child) {
     flex-basis: 0;
     flex-grow: 999;
-    min-inline-size: var(--content-min);
+    min-inline-size: var(--content-min-width);
   }
+
 </style>
