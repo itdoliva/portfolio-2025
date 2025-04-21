@@ -1,6 +1,5 @@
 <script>
-	import Box from "$lib/layouts/Box.svelte";
-	import Frame from "$lib/layouts/Frame.svelte";
+	import ProjectCard from "$lib/components/ProjectCard.svelte";
 	import Stack from "$lib/layouts/Stack.svelte";
   import { projects } from "$lib/stores/global";
 
@@ -13,13 +12,7 @@
     <Stack element="ul" borderWidth="1">
 
       {#each $projects as project}
-        <Box element="li" padding="small">
-          <a href="/{project.slug}">
-            <Frame aspectRatio="4/3">
-              <img src="/project-media/{project.slug}/thumbnail.webp" alt={project.name}/>
-            </Frame>
-          </a>
-        </Box>
+        <ProjectCard {project} />
       {/each}
 
     </Stack>
