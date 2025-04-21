@@ -45,7 +45,7 @@ p {
 }
 
 h1, h2, h3, h4, h5 {
-  @apply font-satoshi font-light text-black leading-tight mx-0;
+  @apply font-satoshi font-light leading-tight mx-0;
 }
 
 h1 {
