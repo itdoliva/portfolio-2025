@@ -1,0 +1,65 @@
+---
+title: Trajetórias Educacionais
+url: https://www.fundacaoitau.org.br/observatorio/dados/dados-trajetorias-educacionais
+client:
+  name: Fundação Itaú
+  url: https://www.fundacaoitau.org.br/
+roles:
+  - dev
+tags: 
+  - Website Visualization
+details:
+  - name: Main Skills
+    value: 
+      - Svelte
+      - D3.js
+date: 2025-01-01T00:00:00.000Z
+excerpt: 
+---
+
+<script>
+  import Container from '$lib/components/Container.svelte';
+  import Image from '$lib/components/Image.svelte';
+  import Columns from '$lib/components/Columns.svelte';
+  import Grid1x2 from '$lib/components/Grid1x2.svelte';
+  import Video from '$lib/components/Video.svelte';
+  import Stack from '$lib/layouts/Stack.svelte';
+  import Sidebar from '$lib/layouts/Sidebar.svelte';
+  import Box from '$lib/layouts/Box.svelte';
+  import Switcher from '$lib/layouts/Switcher.svelte';
+  import Center from '$lib/layouts/Center.svelte';
+  import Grid2x2 from '$lib/components/Grid2x2.svelte';
+
+</script>
+
+
+<Container>
+  <Video title="Trajetórias Educacionais - Demo" videoId="V8zXPZqr6Zo" width="1650" height="866" aspectRatio="16/9" />
+</Container>
+
+<Container intrinsicCentering={true}>
+
+  <Stack>
+
+    The dashboard allows the user to understand and explore the educational trajectories of students in Brazilian schools, providing insights into their educational journeys.
+
+    My role in this project was to bring the design from Odd Studio's amazing team to life, developing the dashboard mainly using Svelte and D3.js. 
+
+
+
+  </Stack>
+
+  
+</Container>
+
+<Container>
+  <Image 
+    srcset={[
+      { href: "/project-media/trajetorias-educacionais/cover-960w.webp", width: 960 },
+      { href: "/project-media/trajetorias-educacionais/cover-1536w.webp", width: 1536 },
+      { href: "/project-media/trajetorias-educacionais/cover-2560w.webp", width: 2560 }
+    ]}
+    alt="Preview of {title}"  
+  />
+</Container>
+

@@ -18,9 +18,7 @@ export const getAllProjects = () => {
       project.date = new Date(content.metadata.date)
     }
 
-    if (i === 0) {
-      project.Content = content.default
-    }
+    project.Content = content.default
 
     projects.push(project)
   })
