@@ -2,6 +2,7 @@ import { get } from "svelte/store"
 import { getAllProjects } from "$lib/client/query"
 import { projects, projectsLoaded, currentProject } from "$lib/stores/global"
 
+export const prerender = true;
 export const ssr = false
 
 export async function load({ route }) {
