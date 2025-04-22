@@ -1,6 +1,6 @@
 ---
 title: Where Colors are Afraid to Reflect their Light
-url: https://itdoliva.github.io/where-colors-are-afraid-to-reflect-their-light/
+url: https://colors.italodoliva.com.br/
 roles:
   - designer
   - dev

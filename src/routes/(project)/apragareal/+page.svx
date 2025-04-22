@@ -1,6 +1,6 @@
 ---
 title: APRAGAREAL
-url: https://itdoliva.github.io/apragareal/
+url: https://apragareal.italodoliva.com.br/
 roles:
   - designer
   - dev

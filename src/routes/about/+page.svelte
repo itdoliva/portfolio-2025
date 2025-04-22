@@ -10,6 +10,7 @@
   <Center>
     <Stack>
       <h1>Coming soon :)</h1>
+      <p>Contact me via <a href="mailto:itdoliva@gmail.com">itdoliva@gmail.com</a></p>
       <!-- <Sidebar sideWidth="35%" contentMinWidth="var(--spacing-text-measure)">
         <Frame>
           <img src="/misc/author.webp" alt="A profile picture of Italo Doliva" />
