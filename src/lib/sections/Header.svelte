@@ -16,9 +16,9 @@
       <li>
         <a href="/about" class="flex items-center">About</a>
       </li>
-      <li>
+      <!-- <li>
         <a href="/contact" class="flex items-center">Email</a>
-      </li>
+      </li> -->
     </ul>
   </nav>
 </header>

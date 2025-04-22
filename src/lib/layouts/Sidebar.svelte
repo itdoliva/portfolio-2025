@@ -28,7 +28,7 @@
 
   .with-sidebar.left > :global(:first-child),
   .with-sidebar.right > :global(:last-child) {
-    inline-size: var(--side-width);
+    flex-basis: var(--side-width);
     min-inline-size: var(--side-min-width);
     max-inline-size: var(--side-max-width);
     flex-grow: 1;
