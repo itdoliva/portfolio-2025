@@ -34,9 +34,9 @@ date: 2022-12-06T00:00:00.000Z
 <Container>
   <Image 
     srcset={[
-      { href: "/project-media/apragareal/cover-960w.webp", width: 960 },
-      { href: "/project-media/apragareal/cover-1536w.webp", width: 1536 },
-      { href: "/project-media/apragareal/cover-2560w.webp", width: 2560 }
+      { href: "/project-media/apragareal/cover-960w.webp", width: 960, height: 541 },
+      { href: "/project-media/apragareal/cover-1536w.webp", width: 1536, height: 960 },
+      { href: "/project-media/apragareal/cover-2560w.webp", width: 2560, height: 1440 }
     ]}
     alt="Preview of {title}"  
   />
@@ -55,9 +55,9 @@ date: 2022-12-06T00:00:00.000Z
 <Container>
   <Image 
     srcset={[
-      { href: "/project-media/apragareal/media-1-960w.webp", width: 960 },
-      { href: "/project-media/apragareal/media-1-1536w.webp", width: 1536 },
-      { href: "/project-media/apragareal/media-1-2560w.webp", width: 2560 }
+      { href: "/project-media/apragareal/media-1-960w.webp", width: 960, height: 1457 },
+      { href: "/project-media/apragareal/media-1-1536w.webp", width: 1536, height: 1080 },
+      { href: "/project-media/apragareal/media-1-2560w.webp", width: 2560, height: 1152 }
     ]}
     alt="Preview of {title}"  
   />
@@ -66,9 +66,9 @@ date: 2022-12-06T00:00:00.000Z
 <Container>
   <Image 
     srcset={[
-      { href: "/project-media/apragareal/media-2-960w.webp", width: 960 },
-      { href: "/project-media/apragareal/media-2-1536w.webp", width: 1536 },
-      { href: "/project-media/apragareal/media-2-2560w.webp", width: 2560 }
+      { href: "/project-media/apragareal/media-2-960w.webp", width: 960, height: 540 },
+      { href: "/project-media/apragareal/media-2-1536w.webp", width: 1536, height: 960 },
+      { href: "/project-media/apragareal/media-2-2560w.webp", width: 2560, height: 1440 }
     ]}
     alt="Preview of {title}"  
   />
@@ -76,10 +76,10 @@ date: 2022-12-06T00:00:00.000Z
 
 <Grid1x2>
   <Box>
-    <Image srcset={[{ href: "/project-media/apragareal/media-3_1-1120w.webp", width: 1120 }]} />
+    <Image srcset={[{ href: "/project-media/apragareal/media-3_1-1120w.webp", width: 1120, height: 630 }]} />
   </Box>
 
   <Box>
-    <Image srcset={[{ href: "/project-media/apragareal/media-3_2-1120w.webp", width: 1120 }]} />
+    <Image srcset={[{ href: "/project-media/apragareal/media-3_2-1120w.webp", width: 1120, height: 630 }]} />
   </Box>
 </Grid1x2>

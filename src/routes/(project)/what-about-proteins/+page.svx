@@ -29,9 +29,9 @@ date: 2023-01-25T00:00:00.000Z
 <Container>
   <Image 
     srcset={[
-      { href: "/project-media/what-about-proteins/cover-960w.webp", width: 960 },
-      { href: "/project-media/what-about-proteins/cover-1536w.webp", width: 1536 },
-      { href: "/project-media/what-about-proteins/cover-2560w.webp", width: 2560 }
+      { href: "/project-media/what-about-proteins/cover-960w.webp", width: 960, height: 621 },
+      { href: "/project-media/what-about-proteins/cover-1536w.webp", width: 1536, height: 960 },
+      { href: "/project-media/what-about-proteins/cover-2560w.webp", width: 2560, height: 1440 }
     ]}
     alt="Preview of {title}"  
   />

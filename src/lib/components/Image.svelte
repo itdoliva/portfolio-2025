@@ -1,8 +1,16 @@
-<script>
-	import Box from "$lib/layouts/Box.svelte";
-	import Frame from "$lib/layouts/Frame.svelte";
+<script lang="ts">
+  import Box from "$lib/layouts/Box.svelte";
+  import Frame from "$lib/layouts/Frame.svelte";
 
-  let { srcset=[], alt, mimeType="image/webp", noBorder=false } = $props()
+  let { 
+    srcset = [], 
+    alt, 
+    noBorder = false 
+  }: { 
+    srcset: Array<{ href: string; width: number, height: number }>, 
+    alt?: string, 
+    noBorder: boolean 
+  } = $props()
   
   let width = $state(0)
 
@@ -25,6 +33,6 @@
 
 <Frame bind:width {noBorder}>
   {#if src}
-    <img loading="lazy" src={src.href} {alt} type={mimeType} />
+    <img loading="lazy" src={src.href} {alt} style="aspect-ratio: {src.width/src.height};"/>
   {/if}
 </Frame>

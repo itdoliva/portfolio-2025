@@ -53,9 +53,9 @@ excerpt:
 <Container>
   <Image 
     srcset={[
-      { href: "/project-media/trajetorias-educacionais/cover-960w.webp", width: 960 },
-      { href: "/project-media/trajetorias-educacionais/cover-1536w.webp", width: 1536 },
-      { href: "/project-media/trajetorias-educacionais/cover-2560w.webp", width: 2560 }
+      { href: "/project-media/trajetorias-educacionais/cover-960w.webp", width: 960, height: 561 },
+      { href: "/project-media/trajetorias-educacionais/cover-1536w.webp", width: 1536, height: 960 },
+      { href: "/project-media/trajetorias-educacionais/cover-2560w.webp", width: 2560, height: 1440 }
     ]}
     alt="Preview of {title}"  
   />

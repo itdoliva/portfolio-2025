@@ -31,6 +31,7 @@
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
       referrerpolicy="strict-origin-when-cross-origin" 
       allowfullscreen 
+      class="bg-[#000000]"
     ></iframe>
   </Frame>
 </div>

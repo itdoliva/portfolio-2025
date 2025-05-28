@@ -57,9 +57,9 @@ excerpt:
 <Container>
   <Image 
     srcset={[
-      { href: "/project-media/where-colors-are-afraid-to-reflect-their-light/cover-960w.webp", width: 960 },
-      { href: "/project-media/where-colors-are-afraid-to-reflect-their-light/cover-1536w.webp", width: 1536 },
-      { href: "/project-media/where-colors-are-afraid-to-reflect-their-light/cover-2560w.webp", width: 2560 }
+      { href: "/project-media/where-colors-are-afraid-to-reflect-their-light/cover-960w.webp", width: 960, height: 541 },
+      { href: "/project-media/where-colors-are-afraid-to-reflect-their-light/cover-1536w.webp", width: 1536, height: 960 },
+      { href: "/project-media/where-colors-are-afraid-to-reflect-their-light/cover-2560w.webp", width: 2560, height: 1440 }
     ]}
     alt="Preview of {title}"  
   />
@@ -68,18 +68,18 @@ excerpt:
 
 <Grid2x2>
   <Box>
-    <Image srcset={[{ href: "/project-media/where-colors-are-afraid-to-reflect-their-light/media-1_1-1120w.webp", width: 1120 }]} />
+    <Image srcset={[{ href: "/project-media/where-colors-are-afraid-to-reflect-their-light/media-1_1-1120w.webp", width: 1120, height: 630 }]} />
   </Box>
 
   <Box>
-    <Image srcset={[{ href: "/project-media/where-colors-are-afraid-to-reflect-their-light/media-1_2-1120w.webp", width: 1120 }]} />
+    <Image srcset={[{ href: "/project-media/where-colors-are-afraid-to-reflect-their-light/media-1_2-1120w.webp", width: 1120, height: 630 }]} />
   </Box>
 
   <Box>
-    <Image srcset={[{ href: "/project-media/where-colors-are-afraid-to-reflect-their-light/media-1_3-1120w.webp", width: 1120 }]} />
+    <Image srcset={[{ href: "/project-media/where-colors-are-afraid-to-reflect-their-light/media-1_3-1120w.webp", width: 1120, height: 630 }]} />
   </Box>
 
   <Box>
-    <Image srcset={[{ href: "/project-media/where-colors-are-afraid-to-reflect-their-light/media-1_4-1120w.webp", width: 1120 }]} />
+    <Image srcset={[{ href: "/project-media/where-colors-are-afraid-to-reflect-their-light/media-1_4-1120w.webp", width: 1120, height: 630 }]} />
   </Box>
 </Grid2x2>
