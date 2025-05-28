@@ -1,7 +1,11 @@
 <script>
+  import { page } from '$app/state';
 
 	import Logo from "$lib/assets/Logo.svelte";
 
+  let isAbout = $derived(page.url.pathname === '/about');
+
+  $inspect(page.url.pathname)
 </script>
 
 <header class="border-b border-b-gray-light flex justify-between">
@@ -13,12 +17,13 @@
 
   <nav class="flex font-satoshi text-gray nav-label">
     <ul class="flex items-stretch *:border-l *:border-l-gray-light *:px-4 *:flex">
-      <li>
-        <a href="/about" class="flex items-center">About</a>
+      <li class="{isAbout ? 'bg-black text-white' : 'hover:bg-black hover:text-white'} ">
+        {#if isAbout}
+          <span class="flex items-center pointer-events-none">About</span>
+        {:else}
+          <a href="/about" class="flex items-center">About</a>
+        {/if}
       </li>
-      <!-- <li>
-        <a href="/contact" class="flex items-center">Email</a>
-      </li> -->
     </ul>
   </nav>
 </header>
