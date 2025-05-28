@@ -19,6 +19,10 @@
       return null
     }
 
+    if (srcset.length === 1) {
+      return srcset[0]
+    }
+
     for (let i=0; i<srcset.length; i++) {
       if (width <= srcset[i].width / window.devicePixelRatio) {
         return srcset[i]
