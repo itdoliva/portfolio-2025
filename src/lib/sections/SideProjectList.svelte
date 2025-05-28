@@ -4,10 +4,15 @@
   import { projects } from "$lib/stores/global";
 
   let width = $state(0)
+  let height = $state(0)
+
 </script>
 
-<aside bind:clientWidth={width}>
-  <div class="fixed top-0 left-0 min-h-svh border-r border-r-gray-light overflow-auto" style:width={width + 'px'}>
+<svelte:window bind:innerHeight={height} />
+
+
+<aside bind:clientWidth={width} class="-mb-24 border-r border-r-gray-light">
+  <div class="fixed top-0 left-0 overflow-auto" style:width={width + 'px'} style:height={height + 'px'}>
 
     <Stack element="ul" borderWidth="1">
 
