@@ -25,8 +25,8 @@ date: 2024-10-25T00:00:00.000Z
   import Container from '$lib/components/Container.svelte';
   import Image from '$lib/components/Image.svelte';
   import Grid2x2 from '$lib/components/Grid2x2.svelte';
-  import Stack from '$lib/layouts/Stack.svelte';
-  import Box from '$lib/layouts/Box.svelte';
+  import Stack from '$lib/components/layout/stack/Stack.svelte';
+  import Box from '$lib/components/layout/box/Box.svelte';
 </script>
 
 <Container>

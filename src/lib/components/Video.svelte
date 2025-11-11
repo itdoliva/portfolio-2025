@@ -1,5 +1,5 @@
 <script>
-	import Frame from "$lib/layouts/Frame.svelte";
+	import Frame from "$lib/components/layout/frame/Frame.svelte";
 
   let { 
     title,

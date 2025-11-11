@@ -1,6 +1,6 @@
 <script lang="ts">
-  import Box from "$lib/layouts/Box.svelte";
-  import Frame from "$lib/layouts/Frame.svelte";
+  import Box from "$lib/components/layout/box/Box.svelte";
+  import Frame from "$lib/components/layout/frame/Frame.svelte";
 
   let { 
     srcset = [], 

@@ -1,7 +1,7 @@
 <script>
 	import NewTab from "$lib/assets/NewTab.svelte";
-	import Box from "$lib/layouts/Box.svelte";
-	import Frame from "$lib/layouts/Frame.svelte";
+	import Box from "$lib/components/layout/box/Box.svelte";
+	import Frame from "$lib/components/layout/frame/Frame.svelte";
 
   let { project } = $props()
 </script>

@@ -1,9 +1,9 @@
 <script>
-  import Box from "$lib/layouts/Box.svelte";
-  import Center from "$lib/layouts/Center.svelte";
-  import Stack from "$lib/layouts/Stack.svelte";
-  import Sidebar from "$lib/layouts/Sidebar.svelte";
-	import Frame from "$lib/layouts/Frame.svelte";
+  import Box from "$lib/components/layout/box/Box.svelte";
+  import Center from "$lib/components/layout/center/Center.svelte";
+  import Stack from "$lib/components/layout/stack/Stack.svelte";
+  import Sidebar from "$lib/components/layout/sidebar/Sidebar.svelte";
+	import Frame from "$lib/components/layout/frame/Frame.svelte";
 	import Image from "$lib/components/Image.svelte";
 </script>
 

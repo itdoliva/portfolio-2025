@@ -1,26 +1,26 @@
 <script>
+	import { browser } from '$app/environment';
 	import '../app.css';
 	import SideProjectList from '$lib/sections/SideProjectList.svelte';
 	import Header from '$lib/sections/Header.svelte';
-	import { projects, currentProject } from '$lib/stores/global';
+	import { currentProject } from '$lib/stores/global';
 	import ProjectView from '$lib/sections/ProjectView.svelte';
-	import Sidebar from '$lib/layouts/Sidebar.svelte';
-	import Stack from '$lib/layouts/Stack.svelte';
-	import { browser } from '$app/environment';
+	import Sidebar from '$lib/components/layout/sidebar/Sidebar.svelte';
+	import Stack from '$lib/components/layout/stack/Stack.svelte';
 	
 	let { children, data } = $props();
-
-	let HomeProjectContent = $derived(data.route === '/' && $currentProject.Content)
-
+	let HomeProjectContent = $derived(data.route === '/' && $currentProject.Content);
+	
 	if (browser) {
-		window.dataLayer = window.dataLayer || []
-		window.gtag = function gtag() { 
-			window.dataLayer.push(arguments) 
-		}
-		window.gtag('js', new Date())
-		window.gtag('config', 'G-CJBPZ3FWP0')
+		window.dataLayer = window.dataLayer || [];
+	
+		window.gtag = function gtag() {
+			window.dataLayer.push(arguments);
+		};
+	
+		window.gtag('js', new Date());
+		window.gtag('config', 'G-CJBPZ3FWP0');
 	}
-
 </script>
 
 <svelte:head>
@@ -28,7 +28,7 @@
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-CJBPZ3FWP0"></script>
 </svelte:head>
 
-<Sidebar sideOn='left' sideWidth="20%" gapK=0>
+<Sidebar sideWidth="20%">
 
 	<SideProjectList />
 
@@ -36,14 +36,14 @@
 
 		<Header />
 
-		<Stack element="main" borderWidth="1">
+		<Stack as="main">
 			{#if data.route === '/'}
 	
 				<ProjectView>
 					<HomeProjectContent />
 				</ProjectView>
 	
-			{:else if data.route.startsWith('/(project)')}
+			{:else if data.route?.startsWith('/(project)')}
 	
 				<ProjectView>
 					{@render children()}

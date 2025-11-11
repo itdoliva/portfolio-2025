@@ -27,11 +27,11 @@ excerpt:
   import Columns from '$lib/components/Columns.svelte';
   import Grid1x2 from '$lib/components/Grid1x2.svelte';
   import Video from '$lib/components/Video.svelte';
-  import Stack from '$lib/layouts/Stack.svelte';
-  import Sidebar from '$lib/layouts/Sidebar.svelte';
-  import Box from '$lib/layouts/Box.svelte';
-  import Switcher from '$lib/layouts/Switcher.svelte';
-  import Center from '$lib/layouts/Center.svelte';
+  import Stack from '$lib/components/layout/stack/Stack.svelte';
+  import Sidebar from '$lib/components/layout/sidebar/Sidebar.svelte';
+  import Box from '$lib/components/layout/box/Box.svelte';
+  import Switcher from '$lib/components/layout/switcher/Switcher.svelte';
+  import Center from '$lib/components/layout/center/Center.svelte';
   import Grid2x2 from '$lib/components/Grid2x2.svelte';
 
 </script>

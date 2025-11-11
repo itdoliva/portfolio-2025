@@ -20,16 +20,12 @@
   --spacing-text-measure: 55ch;
 }
 
-* {
+/* * {
   @apply box-border;
 }
 
 html {
   scrollbar-gutter: stable;
-}
-
-body {
-  @apply bg-white font-satoshi text-black text-base leading-snug m-0 p-0;
 }
 
 img {
@@ -54,7 +50,7 @@ h1 {
 
 h2 {
   @apply text-base md:text-lg;
-}
+} */
 
 /* LAYOUT */
 
@@ -62,19 +58,18 @@ h2 {
   @apply center-l;
 } */
 
-@utility center-l {
+/* @utility center-l {
   @apply max-w-6xl mx-auto;
-}
+} */
 
 
 /* TYPOGRAPHY */
-
-@utility nav-label {
+/* @utility nav-label {
   @apply text-xs md:text-xs;
-}
+} */
 
 /* SPACING */
-@utility hpad {
+/* @utility hpad {
   @apply px-4 md:px-9 xl:px-10;
 }
 
@@ -84,16 +79,16 @@ h2 {
 
 @utility pad {
   @apply hpad vpad;
-}
+} */
 
 /* PADDING */
-@utility pad-sm {
+/* @utility pad-sm {
   @apply p-1 md:p-3;
 }
 
 @utility pad-md {
   @apply p-4 md:p-6;
-}
+} */
 
 
 

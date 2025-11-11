@@ -1,6 +1,6 @@
 <script>
-	import Box from "$lib/layouts/Box.svelte";
-	import Switcher from "$lib/layouts/Switcher.svelte";
+	import Box from "$lib/components/layout/box/Box.svelte";
+	import Switcher from "$lib/components/layout/switcher/Switcher.svelte";
 
 
   let { children } = $props()

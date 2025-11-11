@@ -17,20 +17,263 @@
 		"@sveltejs/adapter-static": "^3.0.8",
 		"@sveltejs/kit": "^2.16.0",
 		"@sveltejs/vite-plugin-svelte": "^5.0.0",
-		"@tailwindcss/vite": "^4.0.0",
+		"@tailwindcss/vite": "^4.1.14",
 		"@tsconfig/svelte": "^5.0.4",
 		"eslint": "^9.18.0",
 		"eslint-config-prettier": "^10.0.1",
 		"eslint-plugin-svelte": "^3.0.0",
 		"globals": "^16.0.0",
-		"mdsvex": "^0.12.3",
+		"mdsvex": "^0.12.6",
 		"prettier": "^3.4.2",
 		"prettier-plugin-svelte": "^3.3.3",
-		"prettier-plugin-tailwindcss": "^0.6.11",
+		"prettier-plugin-tailwindcss": "^0.7.1",
 		"svelte": "^5.0.0",
 		"svelte-preprocess": "^6.0.3",
-		"tailwindcss": "^4.0.0",
+		"tailwindcss": "^4.1.14",
 		"typescript": "^5.8.3",
+		"typescript-eslint": "^8.46.4",
 		"vite": "^6.2.5"
+	},
+	"exports": {
+		"./package.json": "./package.json",
+		"./assets/DownloadIcon.svelte": {
+			"types": "./package/assets/DownloadIcon.svelte.d.ts",
+			"svelte": "./package/assets/DownloadIcon.svelte",
+			"default": "./package/assets/DownloadIcon.svelte"
+		},
+		"./assets/EnclosedNewTab.svelte": {
+			"types": "./package/assets/EnclosedNewTab.svelte.d.ts",
+			"svelte": "./package/assets/EnclosedNewTab.svelte",
+			"default": "./package/assets/EnclosedNewTab.svelte"
+		},
+		"./assets/Logo.svelte": {
+			"types": "./package/assets/Logo.svelte.d.ts",
+			"svelte": "./package/assets/Logo.svelte",
+			"default": "./package/assets/Logo.svelte"
+		},
+		"./assets/NewTab.svelte": {
+			"types": "./package/assets/NewTab.svelte.d.ts",
+			"svelte": "./package/assets/NewTab.svelte",
+			"default": "./package/assets/NewTab.svelte"
+		},
+		"./assets/Star.svelte": {
+			"types": "./package/assets/Star.svelte.d.ts",
+			"svelte": "./package/assets/Star.svelte",
+			"default": "./package/assets/Star.svelte"
+		},
+		"./client/query": {
+			"types": "./package/client/query.d.ts",
+			"default": "./package/client/query.js"
+		},
+		"./components/Columns.svelte": {
+			"types": "./package/components/Columns.svelte.d.ts",
+			"svelte": "./package/components/Columns.svelte",
+			"default": "./package/components/Columns.svelte"
+		},
+		"./components/Container.svelte": {
+			"types": "./package/components/Container.svelte.d.ts",
+			"svelte": "./package/components/Container.svelte",
+			"default": "./package/components/Container.svelte"
+		},
+		"./components/DownloadButton.svelte": {
+			"types": "./package/components/DownloadButton.svelte.d.ts",
+			"svelte": "./package/components/DownloadButton.svelte",
+			"default": "./package/components/DownloadButton.svelte"
+		},
+		"./components/Grid1x2.svelte": {
+			"types": "./package/components/Grid1x2.svelte.d.ts",
+			"svelte": "./package/components/Grid1x2.svelte",
+			"default": "./package/components/Grid1x2.svelte"
+		},
+		"./components/Grid2x2.svelte": {
+			"types": "./package/components/Grid2x2.svelte.d.ts",
+			"svelte": "./package/components/Grid2x2.svelte",
+			"default": "./package/components/Grid2x2.svelte"
+		},
+		"./components/Image.svelte": {
+			"types": "./package/components/Image.svelte.d.ts",
+			"svelte": "./package/components/Image.svelte",
+			"default": "./package/components/Image.svelte"
+		},
+		"./components/Link.svelte": {
+			"types": "./package/components/Link.svelte.d.ts",
+			"svelte": "./package/components/Link.svelte",
+			"default": "./package/components/Link.svelte"
+		},
+		"./components/ProjectCard.svelte": {
+			"types": "./package/components/ProjectCard.svelte.d.ts",
+			"svelte": "./package/components/ProjectCard.svelte",
+			"default": "./package/components/ProjectCard.svelte"
+		},
+		"./components/ProjectHeader.svelte": {
+			"types": "./package/components/ProjectHeader.svelte.d.ts",
+			"svelte": "./package/components/ProjectHeader.svelte",
+			"default": "./package/components/ProjectHeader.svelte"
+		},
+		"./components/Video.svelte": {
+			"types": "./package/components/Video.svelte.d.ts",
+			"svelte": "./package/components/Video.svelte",
+			"default": "./package/components/Video.svelte"
+		},
+		"./components/layout/box/Box.svelte": {
+			"types": "./package/components/layout/box/Box.svelte.d.ts",
+			"svelte": "./package/components/layout/box/Box.svelte",
+			"default": "./package/components/layout/box/Box.svelte"
+		},
+		"./components/layout/center/Center.svelte": {
+			"types": "./package/components/layout/center/Center.svelte.d.ts",
+			"svelte": "./package/components/layout/center/Center.svelte",
+			"default": "./package/components/layout/center/Center.svelte"
+		},
+		"./components/layout/cluster/Cluster.svelte": {
+			"types": "./package/components/layout/cluster/Cluster.svelte.d.ts",
+			"svelte": "./package/components/layout/cluster/Cluster.svelte",
+			"default": "./package/components/layout/cluster/Cluster.svelte"
+		},
+		"./components/layout/frame/Frame.svelte": {
+			"types": "./package/components/layout/frame/Frame.svelte.d.ts",
+			"svelte": "./package/components/layout/frame/Frame.svelte",
+			"default": "./package/components/layout/frame/Frame.svelte"
+		},
+		"./components/layout/sidebar/Sidebar.svelte": {
+			"types": "./package/components/layout/sidebar/Sidebar.svelte.d.ts",
+			"svelte": "./package/components/layout/sidebar/Sidebar.svelte",
+			"default": "./package/components/layout/sidebar/Sidebar.svelte"
+		},
+		"./components/layout/stack/Stack.svelte": {
+			"types": "./package/components/layout/stack/Stack.svelte.d.ts",
+			"svelte": "./package/components/layout/stack/Stack.svelte",
+			"default": "./package/components/layout/stack/Stack.svelte"
+		},
+		"./components/layout/switcher/Switcher.svelte": {
+			"types": "./package/components/layout/switcher/Switcher.svelte.d.ts",
+			"svelte": "./package/components/layout/switcher/Switcher.svelte",
+			"default": "./package/components/layout/switcher/Switcher.svelte"
+		},
+		"./css/animation.css": "./package/css/animation.css",
+		"./css/font-registry.css": "./package/css/font-registry.css",
+		".": {
+			"types": "./package/index.d.ts",
+			"svelte": "./package/index.js",
+			"default": "./package/index.js"
+		},
+		"./sections/Header.svelte": {
+			"types": "./package/sections/Header.svelte.d.ts",
+			"svelte": "./package/sections/Header.svelte",
+			"default": "./package/sections/Header.svelte"
+		},
+		"./sections/ProjectView.svelte": {
+			"types": "./package/sections/ProjectView.svelte.d.ts",
+			"svelte": "./package/sections/ProjectView.svelte",
+			"default": "./package/sections/ProjectView.svelte"
+		},
+		"./sections/SideProjectList.svelte": {
+			"types": "./package/sections/SideProjectList.svelte.d.ts",
+			"svelte": "./package/sections/SideProjectList.svelte",
+			"default": "./package/sections/SideProjectList.svelte"
+		},
+		"./stores/global": {
+			"types": "./package/stores/global.d.ts",
+			"default": "./package/stores/global.js"
+		},
+		"./utils/helpers": {
+			"types": "./package/utils/helpers.d.ts",
+			"default": "./package/utils/helpers.js"
+		}
+	},
+	"files": [
+		"package"
+	],
+	"svelte": "./package/index.js",
+	"typesVersions": {
+		">4.0": {
+			"assets/DownloadIcon.svelte": [
+				"./package/assets/DownloadIcon.svelte.d.ts"
+			],
+			"assets/EnclosedNewTab.svelte": [
+				"./package/assets/EnclosedNewTab.svelte.d.ts"
+			],
+			"assets/Logo.svelte": [
+				"./package/assets/Logo.svelte.d.ts"
+			],
+			"assets/NewTab.svelte": [
+				"./package/assets/NewTab.svelte.d.ts"
+			],
+			"assets/Star.svelte": [
+				"./package/assets/Star.svelte.d.ts"
+			],
+			"client/query": [
+				"./package/client/query.d.ts"
+			],
+			"components/Columns.svelte": [
+				"./package/components/Columns.svelte.d.ts"
+			],
+			"components/Container.svelte": [
+				"./package/components/Container.svelte.d.ts"
+			],
+			"components/DownloadButton.svelte": [
+				"./package/components/DownloadButton.svelte.d.ts"
+			],
+			"components/Grid1x2.svelte": [
+				"./package/components/Grid1x2.svelte.d.ts"
+			],
+			"components/Grid2x2.svelte": [
+				"./package/components/Grid2x2.svelte.d.ts"
+			],
+			"components/Image.svelte": [
+				"./package/components/Image.svelte.d.ts"
+			],
+			"components/Link.svelte": [
+				"./package/components/Link.svelte.d.ts"
+			],
+			"components/ProjectCard.svelte": [
+				"./package/components/ProjectCard.svelte.d.ts"
+			],
+			"components/ProjectHeader.svelte": [
+				"./package/components/ProjectHeader.svelte.d.ts"
+			],
+			"components/Video.svelte": [
+				"./package/components/Video.svelte.d.ts"
+			],
+			"components/layout/box/Box.svelte": [
+				"./package/components/layout/box/Box.svelte.d.ts"
+			],
+			"components/layout/center/Center.svelte": [
+				"./package/components/layout/center/Center.svelte.d.ts"
+			],
+			"components/layout/cluster/Cluster.svelte": [
+				"./package/components/layout/cluster/Cluster.svelte.d.ts"
+			],
+			"components/layout/frame/Frame.svelte": [
+				"./package/components/layout/frame/Frame.svelte.d.ts"
+			],
+			"components/layout/sidebar/Sidebar.svelte": [
+				"./package/components/layout/sidebar/Sidebar.svelte.d.ts"
+			],
+			"components/layout/stack/Stack.svelte": [
+				"./package/components/layout/stack/Stack.svelte.d.ts"
+			],
+			"components/layout/switcher/Switcher.svelte": [
+				"./package/components/layout/switcher/Switcher.svelte.d.ts"
+			],
+			"index.d.ts": [
+				"./package/index.d.ts"
+			],
+			"sections/Header.svelte": [
+				"./package/sections/Header.svelte.d.ts"
+			],
+			"sections/ProjectView.svelte": [
+				"./package/sections/ProjectView.svelte.d.ts"
+			],
+			"sections/SideProjectList.svelte": [
+				"./package/sections/SideProjectList.svelte.d.ts"
+			],
+			"stores/global": [
+				"./package/stores/global.d.ts"
+			],
+			"utils/helpers": [
+				"./package/utils/helpers.d.ts"
+			]
+		}
 	}
 }

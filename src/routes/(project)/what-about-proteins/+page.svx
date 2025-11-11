@@ -20,9 +20,9 @@ date: 2023-01-25T00:00:00.000Z
   import Image from '$lib/components/Image.svelte';
   import Columns from '$lib/components/Columns.svelte';
   import Grid2x2 from '$lib/components/Grid2x2.svelte';
-  import Stack from '$lib/layouts/Stack.svelte';
-  import Box from '$lib/layouts/Box.svelte';
-  import Cluster from '$lib/layouts/Cluster.svelte';
+  import Stack from '$lib/components/layout/stack/Stack.svelte';
+  import Box from '$lib/components/layout/box/Box.svelte';
+  import Cluster from '$lib/components/layout/cluster/Cluster.svelte';
   import Link from '$lib/components/Link.svelte';
 </script>
 

@@ -25,10 +25,10 @@ date: 2022-12-06T00:00:00.000Z
   import Image from '$lib/components/Image.svelte';
   import Columns from '$lib/components/Columns.svelte';
   import Grid1x2 from '$lib/components/Grid1x2.svelte';
-  import Stack from '$lib/layouts/Stack.svelte';
-  import Box from '$lib/layouts/Box.svelte';
-  import Switcher from '$lib/layouts/Switcher.svelte';
-  import Center from '$lib/layouts/Center.svelte';
+  import Stack from '$lib/components/layout/stack/Stack.svelte';
+  import Box from '$lib/components/layout/box/Box.svelte';
+  import Switcher from '$lib/components/layout/switcher/Switcher.svelte';
+  import Center from '$lib/components/layout/center/Center.svelte';
 </script>
 
 <Container>

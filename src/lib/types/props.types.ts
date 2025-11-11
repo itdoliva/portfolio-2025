@@ -1,0 +1,1 @@
+export type DivLikeElement = 'div' | 'ul' | 'section' | 'article' | 'main';
