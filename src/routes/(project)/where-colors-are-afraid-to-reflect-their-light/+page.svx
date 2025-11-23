@@ -22,18 +22,17 @@ excerpt:
 ---
 
 <script>
-  import Container from '$lib/components/Container.svelte';
-  import Image from '$lib/components/Image.svelte';
-  import Columns from '$lib/components/Columns.svelte';
-  import Grid1x2 from '$lib/components/Grid1x2.svelte';
-  import Video from '$lib/components/Video.svelte';
+  import Container from '$lib/components/composed/container/Container.svelte';
+  import Image from '$lib/components/composed/image/Image.svelte';
+  import Grid1x2 from '$lib/components/layout/grid/Grid1x2.svelte';
+  import Video from '$lib/components/composed/video/Video.svelte';
   import Stack from '$lib/components/layout/stack/Stack.svelte';
   import Sidebar from '$lib/components/layout/sidebar/Sidebar.svelte';
   import Box from '$lib/components/layout/box/Box.svelte';
   import Switcher from '$lib/components/layout/switcher/Switcher.svelte';
   import Center from '$lib/components/layout/center/Center.svelte';
-  import Grid2x2 from '$lib/components/Grid2x2.svelte';
-
+  import Grid2x2 from '$lib/components/layout/grid/Grid2x2.svelte';
+  import Paragraph from '$lib/components/typography/paragraph/Paragraph.svelte'
 </script>
 
 
@@ -41,14 +40,16 @@ excerpt:
   <Video title="Where Colors are Afraid to Reflect their Light - Demo" videoId="He_nbssUceA" width="1885" height="866" aspectRatio="16/10" />
 </Container>
 
-<Container intrinsicCentering={true}>
+<Container maxWidth="sm" intrinsic>
 
   <Stack>
 
-    When traveling to other countries, a gay tourist may be at risk for not knowing or being aware of the ways in which other regions dialogue with members of their community. For this reason, every year Spartacus Gay Travel calculates and publishes the Gay Travel Index (GTI), a score for the living conditions of the LGBTQIAPN+ community, for countries and regions around the world.
-
-    Where Colors are Afraid to Reflect their Light alows the comparison of the Gay Travel Index among regions and countries.
-
+    <Paragraph>
+      When traveling to other countries, a gay tourist may be at risk for not knowing or being aware of the ways in which other regions dialogue with members of their community. For this reason, every year Spartacus Gay Travel calculates and publishes the Gay Travel Index (GTI), a score for the living conditions of the LGBTQIAPN+ community, for countries and regions around the world.
+    </Paragraph>
+    <Paragraph>
+      Where Colors are Afraid to Reflect their Light alows the comparison of the Gay Travel Index among regions and countries.
+    </Paragraph>
   </Stack>
 
   

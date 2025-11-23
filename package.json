@@ -19,6 +19,7 @@
 		"@sveltejs/vite-plugin-svelte": "^5.0.0",
 		"@tailwindcss/vite": "^4.1.14",
 		"@tsconfig/svelte": "^5.0.4",
+		"@types/gtag.js": "^0.0.20",
 		"eslint": "^9.18.0",
 		"eslint-config-prettier": "^10.0.1",
 		"eslint-plugin-svelte": "^3.0.0",
@@ -32,7 +33,7 @@
 		"tailwindcss": "^4.1.14",
 		"typescript": "^5.8.3",
 		"typescript-eslint": "^8.46.4",
-		"vite": "^6.2.5"
+		"vite": "^6.4.1"
 	},
 	"exports": {
 		"./package.json": "./package.json",
@@ -80,15 +81,15 @@
 			"svelte": "./package/components/DownloadButton.svelte",
 			"default": "./package/components/DownloadButton.svelte"
 		},
-		"./components/Grid1x2.svelte": {
-			"types": "./package/components/Grid1x2.svelte.d.ts",
-			"svelte": "./package/components/Grid1x2.svelte",
-			"default": "./package/components/Grid1x2.svelte"
+		"./components/layout/grid/Grid1x2.svelte": {
+			"types": "./package/components/layout/grid/Grid1x2.svelte.d.ts",
+			"svelte": "./package/components/layout/grid/Grid1x2.svelte",
+			"default": "./package/components/layout/grid/Grid1x2.svelte"
 		},
-		"./components/Grid2x2.svelte": {
-			"types": "./package/components/Grid2x2.svelte.d.ts",
-			"svelte": "./package/components/Grid2x2.svelte",
-			"default": "./package/components/Grid2x2.svelte"
+		"./components/layout/grid/Grid2x2.svelte": {
+			"types": "./package/components/layout/grid/Grid2x2.svelte.d.ts",
+			"svelte": "./package/components/layout/grid/Grid2x2.svelte",
+			"default": "./package/components/layout/grid/Grid2x2.svelte"
 		},
 		"./components/Image.svelte": {
 			"types": "./package/components/Image.svelte.d.ts",
@@ -110,10 +111,10 @@
 			"svelte": "./package/components/ProjectHeader.svelte",
 			"default": "./package/components/ProjectHeader.svelte"
 		},
-		"./components/Video.svelte": {
-			"types": "./package/components/Video.svelte.d.ts",
-			"svelte": "./package/components/Video.svelte",
-			"default": "./package/components/Video.svelte"
+		"./components/composed/video/Video.svelte": {
+			"types": "./package/components/composed/video/Video.svelte.d.ts",
+			"svelte": "./package/components/composed/video/Video.svelte",
+			"default": "./package/components/composed/video/Video.svelte"
 		},
 		"./components/layout/box/Box.svelte": {
 			"types": "./package/components/layout/box/Box.svelte.d.ts",
@@ -214,11 +215,11 @@
 			"components/DownloadButton.svelte": [
 				"./package/components/DownloadButton.svelte.d.ts"
 			],
-			"components/Grid1x2.svelte": [
-				"./package/components/Grid1x2.svelte.d.ts"
+			"components/layout/grid/Grid1x2.svelte": [
+				"./package/components/layout/grid/Grid1x2.svelte.d.ts"
 			],
-			"components/Grid2x2.svelte": [
-				"./package/components/Grid2x2.svelte.d.ts"
+			"components/layout/grid/Grid2x2.svelte": [
+				"./package/components/layout/grid/Grid2x2.svelte.d.ts"
 			],
 			"components/Image.svelte": [
 				"./package/components/Image.svelte.d.ts"
@@ -232,8 +233,8 @@
 			"components/ProjectHeader.svelte": [
 				"./package/components/ProjectHeader.svelte.d.ts"
 			],
-			"components/Video.svelte": [
-				"./package/components/Video.svelte.d.ts"
+			"components/composed/video/Video.svelte": [
+				"./package/components/composed/video/Video.svelte.d.ts"
 			],
 			"components/layout/box/Box.svelte": [
 				"./package/components/layout/box/Box.svelte.d.ts"

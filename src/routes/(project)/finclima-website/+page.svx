@@ -1,0 +1,91 @@
+---
+title: Finclima Website
+url: https://finclima.org/
+client:
+  name: Finclima
+roles:
+  - dev
+tags: 
+  - Website
+details:
+  - name: Client
+    value: Finclima
+  - name: Role
+    value: Development
+  - name: Main Skills
+    value: 
+      - React
+      - NextJS
+      - GSAP
+      - Prismic
+      - Resend
+date: 2025-10-01T00:00:00.000Z
+---
+
+
+<script>
+  import Stack from '$lib/components/layout/stack/Stack.svelte';
+  import Sidebar from '$lib/components/layout/sidebar/Sidebar.svelte';
+  import Box from '$lib/components/layout/box/Box.svelte';
+  import Switcher from '$lib/components/layout/switcher/Switcher.svelte';
+  import Center from '$lib/components/layout/center/Center.svelte';
+  import Cluster from '$lib/components/layout/cluster/Cluster.svelte';
+  import ExternalLink from '$lib/components/composed/external-link/ExternalLink.svelte'
+  import Grid2x2 from '$lib/components/layout/grid/Grid2x2.svelte';
+
+  import Paragraph from '$lib/components/typography/paragraph/Paragraph.svelte'
+  
+  import Container from '$lib/components/composed/container/Container.svelte';
+  import Image from '$lib/components/composed/image/Image.svelte';
+  import Grid1x2 from '$lib/components/layout/grid/Grid1x2.svelte';
+  import Video from '$lib/components/composed/video/Video.svelte';
+</script>
+
+<Container>
+  <Image 
+    srcset={[
+      { href: "/project-media/finclima-website/cover-960w.webp", width: 960, height: 1078 },
+      { href: "/project-media/finclima-website/cover-1536w.webp", width: 1536, height: 960 },
+      { href: "/project-media/finclima-website/cover-2560w.webp", width: 2560, height: 1440 }
+    ]}
+    alt="Preview of {title}"  
+  />
+</Container>
+
+<Container maxWidth="sm" intrinsic>
+
+  <Stack class="flex-1">
+
+    <Paragraph>
+      A clean, solid website built for Finclima, with a seamless integration of Prismic for content management and Resend to handle email delivery.
+    </Paragraph>
+
+    <Paragraph>
+      My development work centered on bringing Datadot's design to life with pixel-perfect precision, with special attention on preventing layout shifts, maintaining a consistent design system, optimizing images for different sizes, and crafting animations that feel smooth and lightweight.
+    </Paragraph>
+  </Stack>
+
+</Container>
+
+
+<Container>
+  <Video title="Finclima Website - Demo" videoId="fMNkawxDF_I" width="1650" height="866" aspectRatio="16/9" />
+</Container>
+
+<Grid2x2>
+  <Box>
+    <Image srcset={[{ href: "/project-media/finclima-website/media-1_1-1120w.webp", width: 1120, height: 1080 }]} />
+  </Box>
+
+  <Box>
+    <Image srcset={[{ href: "/project-media/finclima-website/media-1_2-1120w.webp", width: 1120, height: 1080 }]} />
+  </Box>
+
+  <Box>
+    <Image srcset={[{ href: "/project-media/finclima-website/media-1_3-1120w.webp", width: 1120, height: 1080 }]} />
+  </Box>
+
+  <Box>
+    <Image srcset={[{ href: "/project-media/finclima-website/media-1_4-1120w.webp", width: 1120, height: 1080 }]} />
+  </Box>
+</Grid2x2>

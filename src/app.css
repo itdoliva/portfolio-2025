@@ -1,23 +1,23 @@
 @import 'tailwindcss';
 
-@import '$lib/css/font-registry.css';
-@import '$lib/css/animation.css';
+@import './lib/css/font-registry.css';
+@import './lib/css/animation.css';
 
 @theme {
-  --color-white: #F7F7F7;
-  --color-black: #303235;
-  --color-gray: #98989A;
-  --color-gray-light: #E8E8E8;
-  --color-gray-lightest: #F2F2F2;
-  --color-blue: #1F6DEA;
+	--color-white: #f7f7f7;
+	--color-black: #303235;
+	--color-gray: #98989a;
+	--color-gray-light: #e8e8e8;
+	--color-gray-lightest: #f2f2f2;
+	--color-blue: #1f6dea;
 
-  --font-satoshi: 'Satoshi', sans-serif;
-  --font-overlock: 'Overlock', serif;
+	--font-satoshi: 'Satoshi', sans-serif;
+	--font-overlock: 'Overlock', serif;
 
-  --leading-tight: 1.15;
-  --leading-snug: 1.3;
+	--leading-tight: 1.15;
+	--leading-snug: 1.3;
 
-  --spacing-text-measure: 55ch;
+	--spacing-text-measure: 55ch;
 }
 
 /* * {
@@ -62,7 +62,6 @@ h2 {
   @apply max-w-6xl mx-auto;
 } */
 
-
 /* TYPOGRAPHY */
 /* @utility nav-label {
   @apply text-xs md:text-xs;
@@ -90,9 +89,6 @@ h2 {
   @apply p-4 md:p-6;
 } */
 
-
-
-
 /* SCROLLBAR */
 /* Works on Firefox */
 /* * {
@@ -102,18 +98,18 @@ h2 {
 
 /* Works on Chrome, Edge, and Safari */
 ::-webkit-scrollbar {
-  @apply w-3;
+	@apply w-3;
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-gray-lightest border-l border-l-gray-light border-r-0;
+	@apply border-r-0 border-l border-l-gray-light bg-gray-lightest;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-clip: padding-box;
-  @apply bg-[#dddddd] border-2 border-black/0 border-l-3 border-l-black/0 rounded-md;
+	background-clip: padding-box;
+	@apply rounded-md border-2 border-l-3 border-black/0 border-l-black/0 bg-[#dddddd];
 }
 
 ::-webkit-scrollbar-button {
-  @apply w-1 h-1;
+	@apply h-1 w-1;
 }

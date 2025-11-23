@@ -1,29 +1,35 @@
 <script>
-  import { page } from '$app/state';
+	import { page } from '$app/state';
 
-	import Logo from "$lib/assets/Logo.svelte";
+	import Logo from '$lib/assets/Logo.svelte';
+	import Label from '$lib/components/typography/label/Label.svelte';
+	import Link from '$lib/components/ui/link/Link.svelte';
 
-  let isAbout = $derived(page.url.pathname === '/about');
-
-  $inspect(page.url.pathname)
+	let isAbout = $derived(page.url.pathname === '/about');
 </script>
 
-<header class="border-b border-b-gray-light flex justify-between">
-  <figure class="ml-4 md:ml-9 my-3 md:my-3 h-3 md:h-5">
-    <a href='/' aria-label="Go to Homepage" title='Homepage'>
-      <Logo />
-    </a>
-  </figure>
+<header class="flex justify-between border-b border-b-gray-light">
+	<figure class="my-3 ml-4 h-4 md:my-3 md:ml-9 md:h-5">
+		<a href="/" aria-label="Go to Homepage" title="Homepage">
+			<Logo />
+		</a>
+	</figure>
 
-  <nav class="flex font-satoshi text-gray nav-label">
-    <ul class="flex items-stretch *:border-l *:border-l-gray-light *:px-4 *:flex">
-      <li class="{isAbout ? 'bg-black text-white' : 'hover:bg-black hover:text-white'} ">
-        {#if isAbout}
-          <span class="flex items-center pointer-events-none">About</span>
-        {:else}
-          <a href="/about" class="flex items-center">About</a>
-        {/if}
-      </li>
-    </ul>
-  </nav>
+	<nav class="nav-label flex font-satoshi text-gray">
+		<ul class="flex items-stretch *:flex *:border-l *:border-l-gray-light *:px-4">
+			<li
+				class={[
+					'flex items-center',
+					isAbout && 'bg-black text-white',
+					!isAbout && 'hover:bg-black hover:text-white'
+				]}
+			>
+				{#if isAbout}
+					<Label>About</Label>
+				{:else}
+					<Link href="/about" target="_self"><Label>About</Label></Link>
+				{/if}
+			</li>
+		</ul>
+	</nav>
 </header>

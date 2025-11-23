@@ -16,14 +16,14 @@ date: 2023-01-25T00:00:00.000Z
 ---
 
 <script>
-  import Container from '$lib/components/Container.svelte';
-  import Image from '$lib/components/Image.svelte';
-  import Columns from '$lib/components/Columns.svelte';
-  import Grid2x2 from '$lib/components/Grid2x2.svelte';
+  import Container from '$lib/components/composed/container/Container.svelte';
+  import Image from '$lib/components/composed/image/Image.svelte';
+  import Grid2x2 from '$lib/components/layout/grid/Grid2x2.svelte';
   import Stack from '$lib/components/layout/stack/Stack.svelte';
   import Box from '$lib/components/layout/box/Box.svelte';
   import Cluster from '$lib/components/layout/cluster/Cluster.svelte';
-  import Link from '$lib/components/Link.svelte';
+  import ExternalLink from '$lib/components/composed/external-link/ExternalLink.svelte';
+  import Paragraph from '$lib/components/typography/paragraph/Paragraph.svelte'
 </script>
 
 <Container>
@@ -37,26 +37,28 @@ date: 2023-01-25T00:00:00.000Z
   />
 </Container>
 
-<Container intrinsicCentering={true}>
+<Container intrinsic>
   <Cluster>
 
-    <Link href="/project-media/what-about-proteins/what-about-proteins.pdf">
+    <ExternalLink href="/project-media/what-about-proteins/what-about-proteins.pdf">
       English Version
-    </Link>
+    </ExternalLink>
 
-    <Link href="/project-media/what-about-proteins/mas-e-as-proteinas.pdf">
+    <ExternalLink href="/project-media/what-about-proteins/mas-e-as-proteinas.pdf">
       Portuguese Version
-    </Link>
+    </ExternalLink>
 
   </Cluster>
 </Container>
 
-<Container intrinsicCentering={true}>
+<Container maxWidth="sm" intrinsic>
   <Stack>
 
+    <Paragraph>
       "What about Proteins?” is maybe one of the most asked questions to vegetarians. It arises from the simplistic view - and surrounded by problems - that meat and eggs are the main protein sources available.
-
+    </Paragraph>
+    <Paragraph>
       The question is also the title of this printable piece that encodes the macronutrient amounts and the saturated fat percentage in certain foods, which are organized into food groups. Values refer to raw portions of 100g.
-
+    </Paragraph>
   </Stack>
 </Container>

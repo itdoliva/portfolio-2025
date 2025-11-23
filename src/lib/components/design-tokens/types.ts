@@ -6,3 +6,6 @@ export type JustifyContent = 'start' | 'center' | 'end' | 'between' | 'around' |
 
 export type AspectRatio = 'auto' | '4/3' | '16/9' | '16/10';
 export type MaxWidth = 'none' | SizeVariant;
+
+export type TextAlignVariant = 'none' | 'left' | 'center' | 'right';
+export type FontWeightVariant = 'light' | 'regular' | 'medium' | 'bold';
